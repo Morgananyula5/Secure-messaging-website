@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Secure Messaging Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Encryption Standard Algorithm</h1>
+        <div class="sections">
+            <div class="section">
+                <h2>Message Encryption</h2>
+                <div class="input-group">
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                    <button onclick="encryptMessage()">Encrypt</button>
+                </div>
+                <div class="output">
+                    <p>Encrypted Message: <span id="encryptedMessage"></span></p>
+                    <p>Key: <span id="key"></span></p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Message Decryption</h2>
+                <div class="input-group">
+                    <textarea id="encryptedInput" placeholder="Enter encrypted message"></textarea>
+                    <input type="text" id="keyInput" placeholder="Enter key">
+                    <button onclick="decryptMessage()">Decrypt</button>
+                </div>
+                <div class="output">
+                    <p>Decrypted Message: <span id="decryptedMessage"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
